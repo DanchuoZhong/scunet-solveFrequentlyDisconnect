@@ -20,7 +20,7 @@
 	<p><i style="font-size:12px; color:read"></i></p>
 </div>
 
-3. 运行该脚本即可
+3. 运行该脚本即可，在powershell中cd到该文件夹下，输入net.ps1(注意是数字1不是字母l)
 
 # 已知bug
 在已经登录的情况下如果断开WiFi连接，该脚本仍然会显示“正常联网，无需登录”
