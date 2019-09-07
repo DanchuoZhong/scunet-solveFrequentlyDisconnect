@@ -11,6 +11,7 @@ while(1){
             $a=get-date
             echo "using scunet script to log in..."
             python scunet.py
+            # python C:\Windows\System32\WindowsPowerShell\v1.0\scunet.py
             $b=get-date
             $span=(NEW-TIMESPAN -start $a -end $b).totalseconds
             $a=$b
