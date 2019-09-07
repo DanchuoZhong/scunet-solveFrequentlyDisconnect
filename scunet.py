@@ -134,7 +134,11 @@ def main():
 
         # # 避免检测超时导致的误判
         # logout()
-        login(stuid, password)
+        try:
+            login(stuid, password)
+        except Exception:
+            print("Error in login")
+            return
 
     else:
         args = sys.argv[1]
