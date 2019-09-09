@@ -3,6 +3,7 @@ import re
 import os
 import sys
 import json
+import time
 import getpass
 from urllib.parse import urlparse
 
@@ -125,20 +126,28 @@ def main():
     判断将要执行的操作
     :return:
     """
-    if len(sys.argv) == 1:
-        stuid, password = get_user_info()
-        # 检测联网状况，判定是否需要登录
-        # if detectportal():
-        #     prompt("正常联网，无需登录")
-        #     exit(0)
 
-        # # 避免检测超时导致的误判
-        # logout()
-        try:
-            login(stuid, password)
-        except Exception:
-            print("Error in login")
-            return
+    if len(sys.argv) == 1:
+        while True:
+            res = requests.get("http://www.baidu.com", allow_redirects=False).text
+            if (len(res) != 512):
+                print("正常联网，无需登录")
+                time.sleep(1)
+                continue
+            else:
+                stuid, password = get_user_info()
+                # 检测联网状况，判定是否需要登录
+                # if detectportal():
+                #     prompt("正常联网，无需登录")
+                #     exit(0)
+                login(stuid,password)
+                # 避免检测超时导致的误判
+                # logout()
+                # try:
+                #     login(stuid, password)
+                # except Exception:
+                #     print("Error in login")
+                #     return
 
     else:
         args = sys.argv[1]
