@@ -11,8 +11,7 @@
 
 19/9/07/22：44：提供了更方便使用脚本的方法
 
-19/9/09/22: 19: 修改逻辑,只需运行`python3 scunet.py`即可.
-
+19/9/09/22：25: 修改逻辑,只需运行`python3 scunet.py`即可.
 
 # 使用方法：
 0. 将该脚本的压缩包下载到某个地方并解压缩
@@ -34,10 +33,10 @@
 # 鸣谢
 感谢 https://github.com/IanSmith123/SCUNET 的作者宾神和魏巨的协助
 
-# ~~如果想更方便的使用该脚本
-假设脚本放在桌面的`net`文件夹里，那么为了运行脚本你必须：`cd .\Desktop\net\` ,输入Enter后再`net.ps1`。有没有更方便的方法，像是使用`ping`或者`python`一样直接在powershell里一行就直接运行的方法呢？
+# ~~如果想更方便的使用该脚本~~
+~~假设脚本放在桌面的`net`文件夹里，那么为了运行脚本你必须：`cd .\Desktop\net\` ,输入Enter后再`net.ps1`。有没有更方便的方法，像是使用`ping`或者`python`一样直接在powershell里一行就直接运行的方法呢？~~
 
-~~其实很简单，只需要打开powershell的目录`C:\Windows\System32\WindowsPowerShell\v1.0` ,把`net.ps1`拖到里面，（建议地）更名为`scunet.ps1`。同样的，`scunet.py`也拖进去。
+~~其实很简单，只需要打开powershell的目录`C:\Windows\System32\WindowsPowerShell\v1.0` ,把`net.ps1`拖到里面，（建议地）更名为`scunet.ps1`。同样的，`scunet.py`也拖进去。~~
 <div align="center">
 	<span style="display: inline-block">
 		<img src="README\2019-09-07-22-41-50.png" width="70%" />
@@ -45,7 +44,7 @@
 	<p><i style="font-size:12px; color:read"></i></p>
 </div>
 
-~~然后，你必须把scunet.ps1内的`python scunet.py`注释掉，并解除`#python C:\Windows\System32\WindowsPowerShell\v1.0\scunet.py`的注释，变成如图的样子：
+~~然后，你必须把scunet.ps1内的`python scunet.py`注释掉，并解除`#python C:\Windows\System32\WindowsPowerShell\v1.0\scunet.py`的注释，变成如图的样子：~~
 <div align="center">
 	<span style="display: inline-block">
 		<img src="README\2019-09-07-22-39-15.png" width="100%" />
@@ -53,7 +52,7 @@
 	<p><i style="font-size:12px; color:read"></i></p>
 </div>
 
-~~如果不这么做，系统就找不到 `scunet.py`的位置，会报错。如此一来，在powershell内输入`scunet.ps1`（如果你对命令行熟悉的话，直接输`scu`再按`tab`键就可以了）
+~~如果不这么做，系统就找不到 `scunet.py`的位置，会报错。如此一来，在powershell内输入`scunet.ps1`（如果你对命令行熟悉的话，直接输`scu`再按`tab`键就可以了）~~
 <div align="center">
 	<span style="display: inline-block">
 		<img src="README\2019-09-07-22-46-41.png" width="70%" />
